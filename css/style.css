@@ -267,6 +267,13 @@ body {
 		max-width: 360px;
 		height: auto;
 	}
+
+	@-moz-document url-prefix() {
+		.menu-burger {
+			position: relative;
+			bottom: 7px;
+		}
+	}
 }
 
 @media (min-width: 1120px) {
@@ -294,5 +301,28 @@ body {
 
   .about__text {
 	height: auto;
+	}
+}
+
+@-moz-document url-prefix() {
+
+	.header__list li:nth-last-child(2)::before {
+		position: relative;
+		top: 13px;
+	}
+
+	.button-repair {
+		position: relative;
+		bottom: 6px;
+	}
+
+	.header__burger::after {
+		position: relative;
+		top: 11px;
+	}
+
+	.header__logo {
+		position: relative;
+		top: 4px;
 	}
 }
