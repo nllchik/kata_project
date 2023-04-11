@@ -24,6 +24,11 @@ body {
 
 .menu-burger {
 	background-image: url(../img/icon/burger.svg);
+	margin-top: 1px;
+}
+
+.header__logo {
+	margin-top: 7px;
 }
 
 .header__button {
@@ -33,6 +38,7 @@ body {
 	width: 40px;
 	height: 40px;
 	background-repeat: no-repeat;
+	vertical-align: top;
 }
 
 .button-phone {
@@ -49,7 +55,6 @@ body {
 
 .button-repair {
 	background-image: url(../img/icon/repair.svg);
-	margin-bottom: 4px;
 }
 
 .button-checkstatus {
@@ -66,11 +71,12 @@ body {
 	content: "";
 	display: inline-block;
 	margin-right: 11px;
-	margin-bottom: 4px;
 	background-color: #EAEAEA;
 	height: 32px;
 	width: 2px;
 	border-radius: 1px;
+	vertical-align: bottom;
+	margin-bottom: 4px;
 }
 
 .header__list>li:nth-child(-n+3) {
@@ -235,7 +241,7 @@ body {
 		content: "";
 		display: inline-block;
 		margin-right: 16px;
-		margin-bottom: 3px;
+		margin-top: 4px;
 		background-color: #EAEAEA;
 		height: 32px;
 		width: 2px;
@@ -267,13 +273,6 @@ body {
 		max-width: 360px;
 		height: auto;
 	}
-
-	@-moz-document url-prefix() {
-		.menu-burger {
-			position: relative;
-			bottom: 7px;
-		}
-	}
 }
 
 @media (min-width: 1120px) {
@@ -301,28 +300,5 @@ body {
 
   .about__text {
 	height: auto;
-	}
-}
-
-@-moz-document url-prefix() {
-
-	.header__list li:nth-last-child(2)::before {
-		position: relative;
-		top: 13px;
-	}
-
-	.button-repair {
-		position: relative;
-		bottom: 6px;
-	}
-
-	.header__burger::after {
-		position: relative;
-		top: 11px;
-	}
-
-	.header__logo {
-		position: relative;
-		top: 4px;
 	}
 }
