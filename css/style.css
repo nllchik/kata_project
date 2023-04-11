@@ -114,6 +114,7 @@ body {
 	display: flex;
 	align-items: center;
 }
+
 .services__button {
 	margin-right: 32px;
 	display: none;
@@ -121,6 +122,7 @@ body {
 	background-color: inherit;
 	white-space: nowrap;
 }
+
 .services__btn-repair {
 	background-image: url(../img/icon/repair.svg);
 	background-position: right;
