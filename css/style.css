@@ -162,7 +162,7 @@ body {
 .services__item {
 	display: inline-block;
 	box-sizing: border-box;
-	margin-left: 24px;
+	margin-left: 15px;
 	padding: 8px 9px;
 	height: 40px;
 }
@@ -240,11 +240,19 @@ body {
 		border-radius: 1px;
 	}
 
+	.services__title::before {
+		margin-right: 24px;
+	}
+
+	.services__list{
+		margin-left: 15px
+	}
 
 	.about {
 		flex-direction: row;
 		justify-content: center;
 		align-items: flex-start;
+		margin-left: 15px
 	}
 
 	.about__text {
