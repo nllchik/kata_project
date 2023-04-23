@@ -66,6 +66,7 @@ a {
 
 .burger-main {
 	flex: 1 0 auto;
+	margin-bottom: 50px;
 }
 
 .burger-main__list {
