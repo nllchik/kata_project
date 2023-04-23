@@ -40,8 +40,7 @@ a {
 	height: 88px;
 	margin-bottom: 25px;
 }
-.burger-header__btn {
-}
+
 .btn-shape {
 	list-style-type: none;
 	width: 40px;
@@ -79,6 +78,22 @@ a {
 .burger-main__item {
 	display: inline-block;
 	position: relative;
+	transition: 0.2s;
+}
+
+.burger-main__item:hover:not(.burger-main__item--active) {
+	color: #FF6297;
+}
+
+.burger-main__item:hover:not(.burger-main__item--active):before {
+	content: "";
+	position: absolute;
+	left: -24px;
+	top: -5px;
+	border-radius: 0 20px 20px 0px;
+	width: 4px;
+	height: 32px;
+	background: #FFE0E9;
 }
 
 .burger-main__item--active {
@@ -118,6 +133,11 @@ a {
 .burger-footer__mail {
 	line-height: 24px;
 	letter-spacing: -0.2px;
+	transition: 0.2s;
+}
+
+.burger-footer__mail:hover {
+	color: #FF6297;
 }
 
 .burger-footer__phone {
@@ -125,13 +145,18 @@ a {
 	line-height: 32px;
 	letter-spacing: -0.6px;
 	font-weight: bold;
+	transition: 0.2s;
 }
 
-.burger-footer__languages {
-	
+.burger-footer__phone:hover {
+	color: #FF6297;
 }
 .burger-footer__languages .languages__label {
 	margin-right: 7px;
+	transition: 0.2s;
+}
+.burger-footer__languages .languages__label:hover {
+	color: #FF6297;
 }
 
 .burger-footer__languages .languages__input[type=radio] {
