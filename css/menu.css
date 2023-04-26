@@ -33,7 +33,6 @@ a {
 	height: 100%;
 	margin: 0 24px;
 	display: flex;
-
 	flex-direction: column;
 }
 
@@ -52,6 +51,7 @@ a {
 	border: none;
 	background: #FF3E79;
 	transition: background 0.2s;
+	cursor: pointer;
 }
 
 .btn-shape:hover path, .btn-shape:hover {
@@ -159,6 +159,7 @@ a {
 .burger-footer__languages .languages__label {
 	margin-right: 7px;
 	transition: 0.2s;
+	cursor: pointer;
 }
 .burger-footer__languages .languages__label:hover {
 	color: #FF6297;
