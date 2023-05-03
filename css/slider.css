@@ -11,37 +11,36 @@ body {
 	padding: 0;
 }
 
-.slider__title {
+.services__title {
 	height: 48px;
 	padding: 16px;
 	color: #7E7E82;
 	text-transform: uppercase;
 	letter-spacing: -0.2px;
 	font-weight: normal;
-	margin-bottom: 16px;
 	font-size: 16px;
 	margin: 0 0 16px 0;
 	border-top: 1px solid #D9FFF5;
 	background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
 }
 
-.slider__wrapper {
+.services__wrapper {
 	margin-left: 16px;
 }
 
-.slider__list {
+.services__list {
 	display: flex;
 	margin-bottom: 40px;
+	gap: 16px;
 }
 
-.slider__item {
+.services__item {
 	width: 240px;
 	height: 72px;
 	background: #FFFFFF;
-	margin-right: 16px;
 }
 
-.slider__btn {
+.services__btn {
 	position: relative;
 	width: inherit;
 	height: inherit;
@@ -54,7 +53,7 @@ body {
 	cursor: pointer;
 }
 
-.slider__btn::after {
+.services__btn::after {
 	content: '';
 	position: absolute;
 	width: 40px;
@@ -67,12 +66,12 @@ body {
 	transition-duration: 0.3s;
 }
 
-.slider__btn:hover::after {
+.services__btn:hover::after {
 	background-color: #FFE0E9;
 	border-color: #FFE0E9;
 }
 
-.slider__btn-show-more {
+.services__btn-show-more {
 	display: none;
 	position: relative;
 	background-color: inherit;
@@ -85,11 +84,11 @@ body {
 	transition: 0.3s;
 }
 
-.slider__btn-show-more:hover{
+.services__btn-show-more:hover{
 	color: #04D2AF
 }
 
-.slider__btn-show-more::before {
+.services__btn-show-more::before {
 	content: '';
 	position: absolute;
 	width: 24px;
@@ -99,7 +98,7 @@ body {
 	background: url(../img/icon/arrow.svg) no-repeat ;
 }
 
-.slider__btn-show-more.slider__btn-show-more--open::before{
+.services__btn-show-more.services__btn-show-more--open::before{
 	transform: rotate(180deg);
 	top: -11px;
 	left: -17px;
@@ -116,44 +115,41 @@ body {
 		min-width: 768px;
 	}
 	
-	.slider__title {
+	.services__title {
 		height: 24px;
 		padding-left: 24px;
 		margin-bottom: 24px;
 		background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%)
 	}
 
-	.slider__btn-show-more {
-		display: block;
+	.services__btn-show-more {
+		display: inline-block;
 	}
 
-	.slider__list {
+	.services__list {
 		flex-wrap: wrap;
+		gap: 24px;
 		margin-bottom: 24px;
 		height: 170px;
 		overflow: hidden;	
 	}
 
-	.slider__list--show-all {
+	.services__list--show-all {
 		height: auto;
 	}
 
-	.slider__item {
+	.services__item {
 		width: 224px;
-		margin: 0 24px 16px 0;
+		/* margin-bottom: -10px; только так получается с gap, указать нужный вертикальный отступ. Или всё же правильней тут обойтись без gap?*/
 	}
 
-	.slider__wrapper {
+	.services__wrapper {
 		margin-left: 24px;
 	}
 	
-	.slider__btn-show-more {
+	.services__btn-show-more {
 		margin-left: 32px;
 	}
-
-	.slider__pagination {
-		display: none;
-  }
 }
 
 @media (min-width: 1120px) {
@@ -161,28 +157,30 @@ body {
 		min-width: 1120px;
 	}
 
-	.slider__title {
+	.services__title {
 		padding-left: 32px;
 	}
 
-
-	.slider__item {
-		width: 240px;
-		background: #FFFFFF;
-		margin: 0 32px 16px 0;
+	.services__item{
+		gap: 32px;
 	}
 
-	.slider__wrapper {
+	.services__item {
+		width: 240px;
+		background: #FFFFFF;
+	}
+
+	.services__wrapper {
 		margin-left: 32px;
 	}
 	
-	.slider__btn-show-more {
+	.services__btn-show-more {
 		margin-left: 39px;
 	}
 }
 
 @media (min-width: 1664px) {
-	.slider__btn-show-more{
+	.services__btn-show-more{
 		display: none;
 	}
 }
