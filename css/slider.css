@@ -12,7 +12,7 @@ body {
 }
 
 .services__title {
-	height: 48px;
+	line-height: 24px;
 	padding: 16px;
 	color: #7E7E82;
 	text-transform: uppercase;
@@ -179,7 +179,7 @@ body {
 	}
 }
 
-@media (min-width: 1664px) {
+@media (min-width: 1592px) {
 	.services__btn-show-more{
 		display: none;
 	}
